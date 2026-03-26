@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Files that Tailwind should scan */
+@source "../views/**/*.blade.php";
+@source "../js/**/*.js";
+@source "../js/**/*.jsx";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+
+/* Theme customization */
+@theme {
+  --font-sans:
+    "Instrument Sans",
+    ui-sans-serif,
+    system-ui,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+/* Optional global styles */
+body {
+  font-family: var(--font-sans);
+}
